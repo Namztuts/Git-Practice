@@ -3,11 +3,11 @@ const container = document.getElementById('container');
 function shoot() {
    let roll = Math.floor(Math.random() * 3) + 1;
    if (roll === 1) {
-      return 'Rock';
+      return '✊';
    } else if (roll === 2) {
-      return 'Paper';
+      return '🖐';
    } else if (roll === 3) {
-      return 'Scizzors';
+      return '✌';
    }
 }
 
@@ -17,8 +17,8 @@ container.addEventListener('click', function (e) {
    if (npcChoice === playerChoice) {
       return console.log('Draw');
    }
-   if (playerChoice === 'Rock') {
-      if (npcChoice === 'Scizzors') {
+   if (playerChoice === '✊') {
+      if (npcChoice === '✌') {
          console.log(
             `Winner!! Computer chose ${npcChoice} and you chose ${playerChoice}`
          );
@@ -28,8 +28,8 @@ container.addEventListener('click', function (e) {
          );
       }
    }
-   if (playerChoice === 'Paper') {
-      if (npcChoice === 'Rock') {
+   if (playerChoice === '🖐') {
+      if (npcChoice === '✊') {
          console.log(
             `Winner!! Computer chose ${npcChoice} and you chose ${playerChoice}`
          );
@@ -39,8 +39,8 @@ container.addEventListener('click', function (e) {
          );
       }
    }
-   if (playerChoice === 'Scizzors') {
-      if (npcChoice === 'Paper') {
+   if (playerChoice === '✌') {
+      if (npcChoice === '🖐') {
          console.log(
             `Winner!! Computer chose ${npcChoice} and you chose ${playerChoice}`
          );
